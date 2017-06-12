@@ -1,4 +1,4 @@
-# Potato Market Price Analysis and Forecasting
+# Potato Market Price Analysis
 
 The project aims to analyse the dynamics of potato prices in India for whole year. 
 
