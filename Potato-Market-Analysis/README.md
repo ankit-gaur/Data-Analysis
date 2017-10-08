@@ -7,7 +7,7 @@ The project aims to analyse the dynamics of potato prices in India for whole yea
 * [Pandas](https://pypi.python.org/pypi/pandas) - for easy handling of data.
 * [Matplotlib](http://matplotlib.org/) - for data visualisation.
 * [BeautifulSoup](https://www.crummy.com/software/BeautifulSoup/) - for scrapping table data from html pages.
-* [Selenium](https://pypi.python.org/pypi/selenium) - for downloading html pages containing data which  is not available as a whole.
+* [Selenium](https://pypi.python.org/pypi/selenium) - for downloading html pages containing data which  is not available as whole.
 
 
 ## Screenshots: 
