@@ -74,135 +74,136 @@ def doesPageContain(driver,str):
 
 
 
+if __name__ == '__main__':
+	
+	months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December']
+	years = ['2003', '2004', '2005', '2006', '2007', '2008', '2009' , '2010' , '2011' , '2012', '2013', '2014', '2015', '2016', '2017']
+	states = ['Andhra Pradesh', 'Arunachal Pradesh', 'Assam', 'Bihar', 'Chattisgarh', 'Goa', 'Gujarat', 'Haryana', 'Himachal Pradesh', 'Jammu and Kashmir', 'Jharkhand', 'Karnataka', 'Kerala', 'Madhya Pradesh', 'Maharashtra', 'Manipur', 'Odisha', 'Punjab', 'Rajasthan', 'Sikkim', 'Tamil Nadu', 'Telangana', 'Tripura', 'Uttar Pradesh', 'Uttrakhand', 'West Bengal', 'Chandigarh',  'Delhi' ] 
 
-months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December']
-years = ['2003', '2004', '2005', '2006', '2007', '2008', '2009' , '2010' , '2011' , '2012', '2013', '2014', '2015', '2016', '2017']
-states = ['Andhra Pradesh', 'Arunachal Pradesh', 'Assam', 'Bihar', 'Chattisgarh', 'Goa', 'Gujarat', 'Haryana', 'Himachal Pradesh', 'Jammu and Kashmir', 'Jharkhand', 'Karnataka', 'Kerala', 'Madhya Pradesh', 'Maharashtra', 'Manipur', 'Odisha', 'Punjab', 'Rajasthan', 'Sikkim', 'Tamil Nadu', 'Telangana', 'Tripura', 'Uttar Pradesh', 'Uttrakhand', 'West Bengal', 'Chandigarh',  'Delhi' ] 
 
+	# create a new Firefox session
+	driver = webdriver.Firefox()
+	driver.implicitly_wait(30)
+	driver.maximize_window()
 
-# create a new Firefox session
-driver = webdriver.Firefox()
-driver.implicitly_wait(30)
-driver.maximize_window()
+	loadHome(driver)
 
-loadHome(driver)
-
-counted =getPageCount()
-count = 0
-for year in years:
-	#loadHome(driver)
-	for month in months:
+	counted =getPageCount()
+	count = 0
+	for year in years:
 		#loadHome(driver)
-		for state in states:
-			count = count+1
-			if count<=counted:
-				continue
+		for month in months:
+			#loadHome(driver)
+			for state in states:
+				count = count+1
+				if count<=counted:
+					continue
 
-			success = False
-			while not success:	
-				try:
-					if doesPageContain(driver,"Error"):
-						loadHome(driver)
-						continue
-					yearSelect = Select(driver.find_element_by_id('cboYear'))
-					yearSelect.select_by_value(year)
-					print year
-					if doesPageContain(driver,"Error"):
-						loadHome(driver)
-						continue
-					wait_for_element(driver,'cboMonth')
-					if doesPageContain(driver,"Error"):
-						loadHome(driver)
-						continue
-					monthSelect = Select(driver.find_element_by_id('cboMonth'))
-					monthSelect.select_by_value(month)
-					print month
-					if doesPageContain(driver,"Error"):
-						loadHome(driver)
-						continue
-					wait_for_element(driver,'cboState')
-					if doesPageContain(driver,"Error"):
-						loadHome(driver)
-						continue
-					stateSelect = Select(driver.find_element_by_id('cboState'))		
-					print state 
-					if doesPageContain(driver,state):
-						if state == 'Delhi':
-							state = 'NCT of Delhi'
-						if doesPageContain(driver,"Error"):
-							loadHome(driver)
-							continue	
-						stateSelect.select_by_value(state)
+				success = False
+				while not success:	
+					try:
 						if doesPageContain(driver,"Error"):
 							loadHome(driver)
 							continue
-						wait_for_element(driver,'cboCommodity')	
+						yearSelect = Select(driver.find_element_by_id('cboYear'))
+						yearSelect.select_by_value(year)
+						print year
 						if doesPageContain(driver,"Error"):
 							loadHome(driver)
 							continue
-						commoditySelect = Select(driver.find_element_by_id('cboCommodity'))
-						if doesPageContain(driver,'Potato'):
-							print "page contains potato"
-							commoditySelect.select_by_visible_text('Potato') 
+						wait_for_element(driver,'cboMonth')
+						if doesPageContain(driver,"Error"):
+							loadHome(driver)
+							continue
+						monthSelect = Select(driver.find_element_by_id('cboMonth'))
+						monthSelect.select_by_value(month)
+						print month
+						if doesPageContain(driver,"Error"):
+							loadHome(driver)
+							continue
+						wait_for_element(driver,'cboState')
+						if doesPageContain(driver,"Error"):
+							loadHome(driver)
+							continue
+						stateSelect = Select(driver.find_element_by_id('cboState'))		
+						print state 
+						if doesPageContain(driver,state):
+							if state == 'Delhi':
+								state = 'NCT of Delhi'
+							if doesPageContain(driver,"Error"):
+								loadHome(driver)
+								continue	
+							stateSelect.select_by_value(state)
 							if doesPageContain(driver,"Error"):
 								loadHome(driver)
 								continue
-							wait_for_element(driver,'btnSubmit')
+							wait_for_element(driver,'cboCommodity')	
 							if doesPageContain(driver,"Error"):
 								loadHome(driver)
 								continue
-							btn = driver.find_element_by_id('btnSubmit')
-							btn.click()
-							if(doesPageContain(driver,"Data Not Reported")):
+							commoditySelect = Select(driver.find_element_by_id('cboCommodity'))
+							if doesPageContain(driver,'Potato'):
+								print "page contains potato"
+								commoditySelect.select_by_visible_text('Potato') 
+								if doesPageContain(driver,"Error"):
+									loadHome(driver)
+									continue
+								wait_for_element(driver,'btnSubmit')
+								if doesPageContain(driver,"Error"):
+									loadHome(driver)
+									continue
+								btn = driver.find_element_by_id('btnSubmit')
+								btn.click()
+								if(doesPageContain(driver,"Data Not Reported")):
+									savePageCount(str(count))
+									success = True
+									continue
+								wait_for_element(driver,'gridRecords')
+								#time.sleep(2)
+								#wait_for_page_load(driver)
+								my_wait_for_page_load(driver)
+								savePage(year+'_'+month+'_'+state,driver)
 								savePageCount(str(count))
-								success = True
-								continue
-							wait_for_element(driver,'gridRecords')
-							#time.sleep(2)
-							#wait_for_page_load(driver)
-							my_wait_for_page_load(driver)
-							savePage(year+'_'+month+'_'+state,driver)
-							savePageCount(str(count))
-							loadHome(driver)
-							success =True
+								loadHome(driver)
+								success =True
+							else:
+								print 'page does not contain potato'
+								success =True	
 						else:
-							print 'page does not contain potato'
-							success =True	
-					else:
-						print 'page does not contain '+ state
-						addNotFoundState(state)
-						success = True
-					success  = True	
-				except NoSuchElementException:
-					success  = False	
-				except WebDriverException:
-					successs = False		
-			
-			# 	continue	
-			# try:
-			# 	stateSelect.select_by_value(state)
-			# 	wait_for_element(driver,'cboCommodity')
-			# 	try:
-			# 		commoditySelect = Select(driver.find_element_by_id('cboCommodity'))
-			# 		commoditySelect.select_by_value('Potato') 
-			# 	except NoSuchElementException:
-			# 		print 'no such element exception\n'
-			# 		continue
-			# except NoSuchElementException:
-			# 	err = True
-					
-				
+							print 'page does not contain '+ state
+							addNotFoundState(state)
+							success = True
+						success  = True	
+					except NoSuchElementException:
+						success  = False	
+					except WebDriverException:
+						successs = False		
+
+				# 	continue	
+				# try:
+				# 	stateSelect.select_by_value(state)
+				# 	wait_for_element(driver,'cboCommodity')
+				# 	try:
+				# 		commoditySelect = Select(driver.find_element_by_id('cboCommodity'))
+				# 		commoditySelect.select_by_value('Potato') 
+				# 	except NoSuchElementException:
+				# 		print 'no such element exception\n'
+				# 		continue
+				# except NoSuchElementException:
+				# 	err = True
 
 
 
-print getPageCount()
-
-wait_for_element(driver, 'cboMonth')
-
-monthSelect = Select(driver.find_element_by_id('cboMonth'))
-monthSelect.select_by_value('January')
 
 
- 
+	print getPageCount()
 
-#driver.quit()
+	wait_for_element(driver, 'cboMonth')
+
+	monthSelect = Select(driver.find_element_by_id('cboMonth'))
+	monthSelect.select_by_value('January')
+
+
+
+
+	#driver.quit()
