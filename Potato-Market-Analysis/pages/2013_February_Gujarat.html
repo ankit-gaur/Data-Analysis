@@ -1,0 +1,129 @@
+<html xmlns="http://www.w3.org/1999/xhtml"><head><title>
+	Date Wise Prices
+</title></head> 
+					
+<body>
+    <form name="form1" method="post" action="DatewiseCommodityReport2.aspx" id="form1">
+<div>
+<input name="__EVENTTARGET" id="__EVENTTARGET" value="" type="hidden">
+<input name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" type="hidden">
+<input name="__VIEWSTATE" id="__VIEWSTATE" value="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" type="hidden">
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['form1'];
+if (!theForm) {
+    theForm = document.form1;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="/WebResource.axd?d=xMVbV6tmVFtLyoWuLyzBFfAWWzYrhtbkLfW4r2k0E2IwZtE2-dbcS0ht9XKgaNE1zrLIjezHIIsEVXIdkElZRl10PKw1&amp;t=635588816547524888" type="text/javascript"></script>
+
+<div>
+
+	<input name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="6426A279" type="hidden">
+	<input name="__PREVIOUSPAGE" id="__PREVIOUSPAGE" value="yM_PyIs5Dm05LV2g2LxXB02rWwa2-ROkDzhmgHdwyLDIG0RDfRaTHgbRIN5jGPBdA7ETR0qkdENSyOd4kKxezEykVEci6bJA39yzlmWUTcKU1OuaMhM7hbRfjzYwGoGVJWnR-w2" type="hidden">
+	<input name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEWBALDxJiJCwLSwtXkAgLSwpnTCALM9PumD7NCKaV+Ah9OmS+idy5bMtrvCCZ4" type="hidden">
+</div> 
+     <table style="width:100%" border="0" align="center">
+ <tbody><tr>
+    <td align="center">
+        &nbsp;<input name="ImageButton2" id="ImageButton2" src="../../img/aghead.jpg" style="height:48px;width:251px;border-width:0px;" type="image" align="bottom">
+        &nbsp; &nbsp;</td></tr>
+     <tr>
+     <td align="right">
+         <input name="ImageButton1" id="ImageButton1" src="../../img/HANDs.gif" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ImageButton1&quot;, &quot;&quot;, false, &quot;&quot;, &quot;DatewiseCommodityReport.aspx&quot;, false, false))" style="width:28px;border-width:0px;" type="image"><a id="LinkButton1" href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;LinkButton1&quot;, &quot;&quot;, false, &quot;&quot;, &quot;DatewiseCommodityReport.aspx&quot;, false, true))" style="display:inline-block;width:41px;">Back</a></td>
+     </tr>
+     <tr>
+     <td>
+             <table bordercolor="#266606" border="1" align="center">
+               <tbody><tr>
+                <td style="height: 26px" bgcolor="#ffffe7" align="center"><u>
+                <span id="lblMonth" style="display:inline-block;color:#266606;font-family:Verdana;font-weight:bold;width:591px;"><center>Date Wise Prices for Specified Commodity on  &nbsp;<b><font color="Maroon">February, 2013</font><b></b></b></center></span></u><b><b> 
+                </b></b></td>
+                </tr>
+                          <tr>
+         <td style="height: 20px" bgcolor="#ffffe7" align="center">
+          <span id="lblCommodity" style="display:inline-block;color:#266606;font-family:Verdana;font-weight:bold;width:418px;"><center>Commodity : &nbsp;<font color="Maroon">Potato</font>,  State :&nbsp;<font color="Maroon">Goa</font></center></span></td>
+             </tr>
+                       <tr>
+                <td style="height: 20px; width: 222px;" bgcolor="#ffffe7">
+                       <font color="#266606"><b>NR : Not Reported</b> </font>
+                </td>
+                
+            </tr>
+                     <tr>
+                <td bordercolor="#266606" align="center">
+                
+                   <div>
+	<table rules="all" id="gridRecords" style="background-color:Transparent;border-color:#266606;border-collapse:collapse;" cellspacing="0" border="1" align="Center">
+		<tbody><tr valign="middle">
+			<th scope="col" style="color:#266606;background-color:#FFFFE7;border-color:#266606;width:180px;">Market</th><th scope="col" style="color:#266606;background-color:#FFFFE7;border-color:#266606;width:80px;">Arrival Date</th><th scope="col" style="color:#266606;background-color:#FFFFE7;border-color:#266606;width:80px;">Arrivals (Tonnes)</th><th scope="col" style="color:#266606;background-color:#FFFFE7;border-color:#266606;width:180px;">Variety</th><th scope="col" style="color:#266606;background-color:#FFFFE7;border-color:#266606;height:20px;width:80px;">Minimum Price(Rs./Quintal)</th><th scope="col" style="color:#266606;background-color:#FFFFE7;border-color:#266606;width:80px;">Maximum Price(Rs./Quintal)</th><th scope="col" style="color:#266606;background-color:#FFFFE7;border-color:#266606;width:80px;">Modal Price(Rs./Quintal)</th>
+		</tr><tr align="center">
+			<td style="border-color:#266606;font-weight:bold;width:180px;" align="left">Mapusa</td><td style="border-color:#266606;width:80px;">01/02/2013</td><td style="border-color:#266606;width:80px;" align="right">0.76</td><td style="border-color:#266606;width:180px;" align="center">Potato</td><td style="border-color:#266606;width:80px;" align="right">1000</td><td style="border-color:#266606;width:80px;" align="right">1500</td><td style="border-color:#266606;width:80px;" align="right">1250</td>
+		</tr><tr align="center">
+			<td style="border-color:#266606;font-weight:bold;width:180px;" align="left"></td><td style="border-color:#266606;width:80px;">02/02/2013</td><td style="border-color:#266606;width:80px;" align="right">0.38</td><td style="border-color:#266606;width:180px;" align="center">Potato</td><td style="border-color:#266606;width:80px;" align="right">1000</td><td style="border-color:#266606;width:80px;" align="right">1500</td><td style="border-color:#266606;width:80px;" align="right">1250</td>
+		</tr><tr align="center">
+			<td style="border-color:#266606;font-weight:bold;width:180px;" align="left"></td><td style="border-color:#266606;width:80px;">03/02/2013</td><td style="border-color:#266606;width:80px;" align="right">20.18</td><td style="border-color:#266606;width:180px;" align="center">Potato</td><td style="border-color:#266606;width:80px;" align="right">1000</td><td style="border-color:#266606;width:80px;" align="right">1500</td><td style="border-color:#266606;width:80px;" align="right">1250</td>
+		</tr><tr align="center">
+			<td style="border-color:#266606;font-weight:bold;width:180px;" align="left"></td><td style="border-color:#266606;width:80px;">05/02/2013</td><td style="border-color:#266606;width:80px;" align="right">7.19</td><td style="border-color:#266606;width:180px;" align="center">Potato</td><td style="border-color:#266606;width:80px;" align="right">900</td><td style="border-color:#266606;width:80px;" align="right">1400</td><td style="border-color:#266606;width:80px;" align="right">1150</td>
+		</tr><tr align="center">
+			<td style="border-color:#266606;font-weight:bold;width:180px;" align="left"></td><td style="border-color:#266606;width:80px;">06/02/2013</td><td style="border-color:#266606;width:80px;" align="right">2.07</td><td style="border-color:#266606;width:180px;" align="center">Potato</td><td style="border-color:#266606;width:80px;" align="right">1000</td><td style="border-color:#266606;width:80px;" align="right">1400</td><td style="border-color:#266606;width:80px;" align="right">1200</td>
+		</tr><tr align="center">
+			<td style="border-color:#266606;font-weight:bold;width:180px;" align="left"></td><td style="border-color:#266606;width:80px;">07/02/2013</td><td style="border-color:#266606;width:80px;" align="right">22.01</td><td style="border-color:#266606;width:180px;" align="center">Potato</td><td style="border-color:#266606;width:80px;" align="right">1000</td><td style="border-color:#266606;width:80px;" align="right">1400</td><td style="border-color:#266606;width:80px;" align="right">1200</td>
+		</tr><tr align="center">
+			<td style="border-color:#266606;font-weight:bold;width:180px;" align="left"></td><td style="border-color:#266606;width:80px;">08/02/2013</td><td style="border-color:#266606;width:80px;" align="right">1.6</td><td style="border-color:#266606;width:180px;" align="center">Potato</td><td style="border-color:#266606;width:80px;" align="right">1000</td><td style="border-color:#266606;width:80px;" align="right">1400</td><td style="border-color:#266606;width:80px;" align="right">1200</td>
+		</tr><tr align="center">
+			<td style="border-color:#266606;font-weight:bold;width:180px;" align="left"></td><td style="border-color:#266606;width:80px;">09/02/2013</td><td style="border-color:#266606;width:80px;" align="right">4.97</td><td style="border-color:#266606;width:180px;" align="center">Potato</td><td style="border-color:#266606;width:80px;" align="right">1000</td><td style="border-color:#266606;width:80px;" align="right">1400</td><td style="border-color:#266606;width:80px;" align="right">1200</td>
+		</tr><tr align="center">
+			<td style="border-color:#266606;font-weight:bold;width:180px;" align="left"></td><td style="border-color:#266606;width:80px;">10/02/2013</td><td style="border-color:#266606;width:80px;" align="right">21.91</td><td style="border-color:#266606;width:180px;" align="center">Potato</td><td style="border-color:#266606;width:80px;" align="right">1000</td><td style="border-color:#266606;width:80px;" align="right">1400</td><td style="border-color:#266606;width:80px;" align="right">1200</td>
+		</tr><tr align="center">
+			<td style="border-color:#266606;font-weight:bold;width:180px;" align="left"></td><td style="border-color:#266606;width:80px;">12/02/2013</td><td style="border-color:#266606;width:80px;" align="right">8.19</td><td style="border-color:#266606;width:180px;" align="center">Potato</td><td style="border-color:#266606;width:80px;" align="right">1100</td><td style="border-color:#266606;width:80px;" align="right">1400</td><td style="border-color:#266606;width:80px;" align="right">1250</td>
+		</tr><tr align="center">
+			<td style="border-color:#266606;font-weight:bold;width:180px;" align="left"></td><td style="border-color:#266606;width:80px;">13/02/2013</td><td style="border-color:#266606;width:80px;" align="right">2.31</td><td style="border-color:#266606;width:180px;" align="center">Potato</td><td style="border-color:#266606;width:80px;" align="right">1000</td><td style="border-color:#266606;width:80px;" align="right">1400</td><td style="border-color:#266606;width:80px;" align="right">1200</td>
+		</tr><tr align="center">
+			<td style="border-color:#266606;font-weight:bold;width:180px;" align="left"></td><td style="border-color:#266606;width:80px;">14/02/2013</td><td style="border-color:#266606;width:80px;" align="right">18.74</td><td style="border-color:#266606;width:180px;" align="center">Potato</td><td style="border-color:#266606;width:80px;" align="right">1000</td><td style="border-color:#266606;width:80px;" align="right">1400</td><td style="border-color:#266606;width:80px;" align="right">1200</td>
+		</tr><tr align="center">
+			<td style="border-color:#266606;font-weight:bold;width:180px;" align="left"></td><td style="border-color:#266606;width:80px;">16/02/2013</td><td style="border-color:#266606;width:80px;" align="right">7.85</td><td style="border-color:#266606;width:180px;" align="center">Potato</td><td style="border-color:#266606;width:80px;" align="right">1000</td><td style="border-color:#266606;width:80px;" align="right">1400</td><td style="border-color:#266606;width:80px;" align="right">1200</td>
+		</tr><tr align="center">
+			<td style="border-color:#266606;font-weight:bold;width:180px;" align="left"></td><td style="border-color:#266606;width:80px;">17/02/2013</td><td style="border-color:#266606;width:80px;" align="right">16.65</td><td style="border-color:#266606;width:180px;" align="center">Potato</td><td style="border-color:#266606;width:80px;" align="right">1000</td><td style="border-color:#266606;width:80px;" align="right">1400</td><td style="border-color:#266606;width:80px;" align="right">1200</td>
+		</tr><tr align="center">
+			<td style="border-color:#266606;font-weight:bold;width:180px;" align="left"></td><td style="border-color:#266606;width:80px;">18/02/2013</td><td style="border-color:#266606;width:80px;" align="right">0.25</td><td style="border-color:#266606;width:180px;" align="center">Potato</td><td style="border-color:#266606;width:80px;" align="right">1200</td><td style="border-color:#266606;width:80px;" align="right">1400</td><td style="border-color:#266606;width:80px;" align="right">1300</td>
+		</tr><tr align="center">
+			<td style="border-color:#266606;font-weight:bold;width:180px;" align="left"></td><td style="border-color:#266606;width:80px;">19/02/2013</td><td style="border-color:#266606;width:80px;" align="right">12.06</td><td style="border-color:#266606;width:180px;" align="center">Potato</td><td style="border-color:#266606;width:80px;" align="right">1000</td><td style="border-color:#266606;width:80px;" align="right">1400</td><td style="border-color:#266606;width:80px;" align="right">1200</td>
+		</tr><tr align="center">
+			<td style="border-color:#266606;font-weight:bold;width:180px;" align="left"></td><td style="border-color:#266606;width:80px;">21/02/2013</td><td style="border-color:#266606;width:80px;" align="right">13.98</td><td style="border-color:#266606;width:180px;" align="center">Potato</td><td style="border-color:#266606;width:80px;" align="right">1000</td><td style="border-color:#266606;width:80px;" align="right">1400</td><td style="border-color:#266606;width:80px;" align="right">1200</td>
+		</tr><tr align="center">
+			<td style="border-color:#266606;font-weight:bold;width:180px;" align="left"></td><td style="border-color:#266606;width:80px;">22/02/2013</td><td style="border-color:#266606;width:80px;" align="right">3.88</td><td style="border-color:#266606;width:180px;" align="center">Potato</td><td style="border-color:#266606;width:80px;" align="right">1000</td><td style="border-color:#266606;width:80px;" align="right">1400</td><td style="border-color:#266606;width:80px;" align="right">1200</td>
+		</tr><tr align="center">
+			<td style="border-color:#266606;font-weight:bold;width:180px;" align="left"></td><td style="border-color:#266606;width:80px;">23/02/2013</td><td style="border-color:#266606;width:80px;" align="right">4.4</td><td style="border-color:#266606;width:180px;" align="center">Potato</td><td style="border-color:#266606;width:80px;" align="right">1000</td><td style="border-color:#266606;width:80px;" align="right">1400</td><td style="border-color:#266606;width:80px;" align="right">1200</td>
+		</tr><tr align="center">
+			<td style="border-color:#266606;font-weight:bold;width:180px;" align="left"></td><td style="border-color:#266606;width:80px;">24/02/2013</td><td style="border-color:#266606;width:80px;" align="right">9.99</td><td style="border-color:#266606;width:180px;" align="center">Potato</td><td style="border-color:#266606;width:80px;" align="right">1000</td><td style="border-color:#266606;width:80px;" align="right">1400</td><td style="border-color:#266606;width:80px;" align="right">1200</td>
+		</tr><tr align="center">
+			<td style="border-color:#266606;font-weight:bold;width:180px;" align="left"></td><td style="border-color:#266606;width:80px;">26/02/2013</td><td style="border-color:#266606;width:80px;" align="right">1.17</td><td style="border-color:#266606;width:180px;" align="center">Potato</td><td style="border-color:#266606;width:80px;" align="right">1000</td><td style="border-color:#266606;width:80px;" align="right">1400</td><td style="border-color:#266606;width:80px;" align="right">1200</td>
+		</tr><tr align="center">
+			<td style="border-color:#266606;font-weight:bold;width:180px;" align="left"></td><td style="border-color:#266606;width:80px;">28/02/2013</td><td style="border-color:#266606;width:80px;" align="right">4.92</td><td style="border-color:#266606;width:180px;" align="center">Potato</td><td style="border-color:#266606;width:80px;" align="right">1000</td><td style="border-color:#266606;width:80px;" align="right">1400</td><td style="border-color:#266606;width:80px;" align="right">1200</td>
+		</tr>
+	</tbody></table>
+</div> 
+                 </td>
+            </tr>  
+            </tbody></table>   
+            </td></tr></tbody></table>                              
+        <br>
+                
+    </form>
+    
+
+
+</body></html>

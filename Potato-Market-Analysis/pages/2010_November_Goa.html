@@ -1,0 +1,121 @@
+<html xmlns="http://www.w3.org/1999/xhtml"><head><title>
+	Date Wise Prices
+</title></head> 
+					
+<body>
+    <form name="form1" method="post" action="DatewiseCommodityReport2.aspx" id="form1">
+<div>
+<input name="__EVENTTARGET" id="__EVENTTARGET" value="" type="hidden">
+<input name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" type="hidden">
+<input name="__VIEWSTATE" id="__VIEWSTATE" value="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" type="hidden">
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['form1'];
+if (!theForm) {
+    theForm = document.form1;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="/WebResource.axd?d=xMVbV6tmVFtLyoWuLyzBFfAWWzYrhtbkLfW4r2k0E2IwZtE2-dbcS0ht9XKgaNE1zrLIjezHIIsEVXIdkElZRl10PKw1&amp;t=635588816547524888" type="text/javascript"></script>
+
+<div>
+
+	<input name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="6426A279" type="hidden">
+	<input name="__PREVIOUSPAGE" id="__PREVIOUSPAGE" value="yM_PyIs5Dm05LV2g2LxXB02rWwa2-ROkDzhmgHdwyLDIG0RDfRaTHgbRIN5jGPBdA7ETR0qkdENSyOd4kKxezEykVEci6bJA39yzlmWUTcKU1OuaMhM7hbRfjzYwGoGVJWnR-w2" type="hidden">
+	<input name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEWBALZjb/gCwLSwtXkAgLSwpnTCALM9PumD7JZn3yDzC05gb0xZmRQAlK1Vnpr" type="hidden">
+</div> 
+     <table style="width:100%" border="0" align="center">
+ <tbody><tr>
+    <td align="center">
+        &nbsp;<input name="ImageButton2" id="ImageButton2" src="../../img/aghead.jpg" style="height:48px;width:251px;border-width:0px;" type="image" align="bottom">
+        &nbsp; &nbsp;</td></tr>
+     <tr>
+     <td align="right">
+         <input name="ImageButton1" id="ImageButton1" src="../../img/HANDs.gif" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ImageButton1&quot;, &quot;&quot;, false, &quot;&quot;, &quot;DatewiseCommodityReport.aspx&quot;, false, false))" style="width:28px;border-width:0px;" type="image"><a id="LinkButton1" href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;LinkButton1&quot;, &quot;&quot;, false, &quot;&quot;, &quot;DatewiseCommodityReport.aspx&quot;, false, true))" style="display:inline-block;width:41px;">Back</a></td>
+     </tr>
+     <tr>
+     <td>
+             <table bordercolor="#266606" border="1" align="center">
+               <tbody><tr>
+                <td style="height: 26px" bgcolor="#ffffe7" align="center"><u>
+                <span id="lblMonth" style="display:inline-block;color:#266606;font-family:Verdana;font-weight:bold;width:591px;"><center>Date Wise Prices for Specified Commodity on  &nbsp;<b><font color="Maroon">November, 2010</font><b></b></b></center></span></u><b><b> 
+                </b></b></td>
+                </tr>
+                          <tr>
+         <td style="height: 20px" bgcolor="#ffffe7" align="center">
+          <span id="lblCommodity" style="display:inline-block;color:#266606;font-family:Verdana;font-weight:bold;width:418px;"><center>Commodity : &nbsp;<font color="Maroon">Potato</font>,  State :&nbsp;<font color="Maroon">Goa</font></center></span></td>
+             </tr>
+                       <tr>
+                <td style="height: 20px; width: 222px;" bgcolor="#ffffe7">
+                       <font color="#266606"><b>NR : Not Reported</b> </font>
+                </td>
+                
+            </tr>
+                     <tr>
+                <td bordercolor="#266606" align="center">
+                
+                   <div>
+	<table rules="all" id="gridRecords" style="background-color:Transparent;border-color:#266606;border-collapse:collapse;" border="1" align="Center" cellspacing="0">
+		<tbody><tr valign="middle">
+			<th scope="col" style="color:#266606;background-color:#FFFFE7;border-color:#266606;width:180px;">Market</th><th scope="col" style="color:#266606;background-color:#FFFFE7;border-color:#266606;width:80px;">Arrival Date</th><th scope="col" style="color:#266606;background-color:#FFFFE7;border-color:#266606;width:80px;">Arrivals (Tonnes)</th><th scope="col" style="color:#266606;background-color:#FFFFE7;border-color:#266606;width:180px;">Variety</th><th scope="col" style="color:#266606;background-color:#FFFFE7;border-color:#266606;height:20px;width:80px;">Minimum Price(Rs./Quintal)</th><th scope="col" style="color:#266606;background-color:#FFFFE7;border-color:#266606;width:80px;">Maximum Price(Rs./Quintal)</th><th scope="col" style="color:#266606;background-color:#FFFFE7;border-color:#266606;width:80px;">Modal Price(Rs./Quintal)</th>
+		</tr><tr align="center">
+			<td style="border-color:#266606;font-weight:bold;width:180px;" align="left">Mapusa</td><td style="border-color:#266606;width:80px;">01/11/2010</td><td style="border-color:#266606;width:80px;" align="right">1.45</td><td style="border-color:#266606;width:180px;" align="center">Other</td><td style="border-color:#266606;width:80px;" align="right">600</td><td style="border-color:#266606;width:80px;" align="right">1200</td><td style="border-color:#266606;width:80px;" align="right">900</td>
+		</tr><tr align="center">
+			<td style="border-color:#266606;font-weight:bold;width:180px;" align="left"></td><td style="border-color:#266606;width:80px;">03/11/2010</td><td style="border-color:#266606;width:80px;" align="right">0.75</td><td style="border-color:#266606;width:180px;" align="center">Other</td><td style="border-color:#266606;width:80px;" align="right">600</td><td style="border-color:#266606;width:80px;" align="right">1200</td><td style="border-color:#266606;width:80px;" align="right">900</td>
+		</tr><tr align="center">
+			<td style="border-color:#266606;font-weight:bold;width:180px;" align="left"></td><td style="border-color:#266606;width:80px;">05/11/2010</td><td style="border-color:#266606;width:80px;" align="right">6.64</td><td style="border-color:#266606;width:180px;" align="center">Other</td><td style="border-color:#266606;width:80px;" align="right">600</td><td style="border-color:#266606;width:80px;" align="right">1125</td><td style="border-color:#266606;width:80px;" align="right">850</td>
+		</tr><tr align="center">
+			<td style="border-color:#266606;font-weight:bold;width:180px;" align="left"></td><td style="border-color:#266606;width:80px;">07/11/2010</td><td style="border-color:#266606;width:80px;" align="right">1.6</td><td style="border-color:#266606;width:180px;" align="center">Other</td><td style="border-color:#266606;width:80px;" align="right">600</td><td style="border-color:#266606;width:80px;" align="right">1100</td><td style="border-color:#266606;width:80px;" align="right">850</td>
+		</tr><tr align="center">
+			<td style="border-color:#266606;font-weight:bold;width:180px;" align="left"></td><td style="border-color:#266606;width:80px;">08/11/2010</td><td style="border-color:#266606;width:80px;" align="right">10.9</td><td style="border-color:#266606;width:180px;" align="center">Other</td><td style="border-color:#266606;width:80px;" align="right">700</td><td style="border-color:#266606;width:80px;" align="right">1100</td><td style="border-color:#266606;width:80px;" align="right">900</td>
+		</tr><tr align="center">
+			<td style="border-color:#266606;font-weight:bold;width:180px;" align="left"></td><td style="border-color:#266606;width:80px;">09/11/2010</td><td style="border-color:#266606;width:80px;" align="right">5.98</td><td style="border-color:#266606;width:180px;" align="center">Other</td><td style="border-color:#266606;width:80px;" align="right">500</td><td style="border-color:#266606;width:80px;" align="right">1050</td><td style="border-color:#266606;width:80px;" align="right">775</td>
+		</tr><tr align="center">
+			<td style="border-color:#266606;font-weight:bold;width:180px;" align="left"></td><td style="border-color:#266606;width:80px;">10/11/2010</td><td style="border-color:#266606;width:80px;" align="right">3.72</td><td style="border-color:#266606;width:180px;" align="center">Other</td><td style="border-color:#266606;width:80px;" align="right">500</td><td style="border-color:#266606;width:80px;" align="right">1250</td><td style="border-color:#266606;width:80px;" align="right">875</td>
+		</tr><tr align="center">
+			<td style="border-color:#266606;font-weight:bold;width:180px;" align="left"></td><td style="border-color:#266606;width:80px;">11/11/2010</td><td style="border-color:#266606;width:80px;" align="right">17</td><td style="border-color:#266606;width:180px;" align="center">Other</td><td style="border-color:#266606;width:80px;" align="right">900</td><td style="border-color:#266606;width:80px;" align="right">1200</td><td style="border-color:#266606;width:80px;" align="right">1050</td>
+		</tr><tr align="center">
+			<td style="border-color:#266606;font-weight:bold;width:180px;" align="left"></td><td style="border-color:#266606;width:80px;">12/11/2010</td><td style="border-color:#266606;width:80px;" align="right">8.39</td><td style="border-color:#266606;width:180px;" align="center">&nbsp;</td><td style="border-color:#266606;width:80px;" align="right">NR</td><td style="border-color:#266606;width:80px;" align="right">NR</td><td style="border-color:#266606;width:80px;" align="right">NR</td>
+		</tr><tr align="center">
+			<td style="border-color:#266606;font-weight:bold;width:180px;" align="left"></td><td style="border-color:#266606;width:80px;">13/11/2010</td><td style="border-color:#266606;width:80px;" align="right">8.04</td><td style="border-color:#266606;width:180px;" align="center">Other</td><td style="border-color:#266606;width:80px;" align="right">600</td><td style="border-color:#266606;width:80px;" align="right">1200</td><td style="border-color:#266606;width:80px;" align="right">900</td>
+		</tr><tr align="center">
+			<td style="border-color:#266606;font-weight:bold;width:180px;" align="left"></td><td style="border-color:#266606;width:80px;">14/11/2010</td><td style="border-color:#266606;width:80px;" align="right">21.9</td><td style="border-color:#266606;width:180px;" align="center">Other</td><td style="border-color:#266606;width:80px;" align="right">600</td><td style="border-color:#266606;width:80px;" align="right">1200</td><td style="border-color:#266606;width:80px;" align="right">900</td>
+		</tr><tr align="center">
+			<td style="border-color:#266606;font-weight:bold;width:180px;" align="left"></td><td style="border-color:#266606;width:80px;">15/11/2010</td><td style="border-color:#266606;width:80px;" align="right">2.49</td><td style="border-color:#266606;width:180px;" align="center">Other</td><td style="border-color:#266606;width:80px;" align="right">700</td><td style="border-color:#266606;width:80px;" align="right">1500</td><td style="border-color:#266606;width:80px;" align="right">1100</td>
+		</tr><tr align="center">
+			<td style="border-color:#266606;font-weight:bold;width:180px;" align="left"></td><td style="border-color:#266606;width:80px;">16/11/2010</td><td style="border-color:#266606;width:80px;" align="right">7.08</td><td style="border-color:#266606;width:180px;" align="center">Other</td><td style="border-color:#266606;width:80px;" align="right">700</td><td style="border-color:#266606;width:80px;" align="right">1500</td><td style="border-color:#266606;width:80px;" align="right">1100</td>
+		</tr><tr align="center">
+			<td style="border-color:#266606;font-weight:bold;width:180px;" align="left"></td><td style="border-color:#266606;width:80px;">17/11/2010</td><td style="border-color:#266606;width:80px;" align="right">14.26</td><td style="border-color:#266606;width:180px;" align="center">Other</td><td style="border-color:#266606;width:80px;" align="right">750</td><td style="border-color:#266606;width:80px;" align="right">1530</td><td style="border-color:#266606;width:80px;" align="right">1140</td>
+		</tr><tr align="center">
+			<td style="border-color:#266606;font-weight:bold;width:180px;" align="left"></td><td style="border-color:#266606;width:80px;">19/11/2010</td><td style="border-color:#266606;width:80px;" align="right">12.88</td><td style="border-color:#266606;width:180px;" align="center">Other</td><td style="border-color:#266606;width:80px;" align="right">800</td><td style="border-color:#266606;width:80px;" align="right">1250</td><td style="border-color:#266606;width:80px;" align="right">1025</td>
+		</tr><tr align="center">
+			<td style="border-color:#266606;font-weight:bold;width:180px;" align="left"></td><td style="border-color:#266606;width:80px;">20/11/2010</td><td style="border-color:#266606;width:80px;" align="right">4</td><td style="border-color:#266606;width:180px;" align="center">Other</td><td style="border-color:#266606;width:80px;" align="right">600</td><td style="border-color:#266606;width:80px;" align="right">1250</td><td style="border-color:#266606;width:80px;" align="right">925</td>
+		</tr><tr align="center">
+			<td style="border-color:#266606;font-weight:bold;width:180px;" align="left"></td><td style="border-color:#266606;width:80px;">21/11/2010</td><td style="border-color:#266606;width:80px;" align="right">6.94</td><td style="border-color:#266606;width:180px;" align="center">Other</td><td style="border-color:#266606;width:80px;" align="right">600</td><td style="border-color:#266606;width:80px;" align="right">1250</td><td style="border-color:#266606;width:80px;" align="right">925</td>
+		</tr><tr align="center">
+			<td style="border-color:#266606;font-weight:bold;width:180px;" align="left"></td><td style="border-color:#266606;width:80px;">22/11/2010</td><td style="border-color:#266606;width:80px;" align="right">16.73</td><td style="border-color:#266606;width:180px;" align="center">Other</td><td style="border-color:#266606;width:80px;" align="right">600</td><td style="border-color:#266606;width:80px;" align="right">1250</td><td style="border-color:#266606;width:80px;" align="right">925</td>
+		</tr>
+	</tbody></table>
+</div> 
+                 </td>
+            </tr>  
+            </tbody></table>   
+            </td></tr></tbody></table>                              
+        <br>
+                
+    </form>
+    
+
+
+</body></html>

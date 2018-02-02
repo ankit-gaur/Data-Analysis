@@ -1,0 +1,125 @@
+<html xmlns="http://www.w3.org/1999/xhtml"><head><title>
+	Date Wise Prices
+</title></head> 
+					
+<body>
+    <form name="form1" method="post" action="DatewiseCommodityReport2.aspx" id="form1">
+<div>
+<input name="__EVENTTARGET" id="__EVENTTARGET" value="" type="hidden">
+<input name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" type="hidden">
+<input name="__VIEWSTATE" id="__VIEWSTATE" value="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" type="hidden">
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['form1'];
+if (!theForm) {
+    theForm = document.form1;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="/WebResource.axd?d=xMVbV6tmVFtLyoWuLyzBFfAWWzYrhtbkLfW4r2k0E2IwZtE2-dbcS0ht9XKgaNE1zrLIjezHIIsEVXIdkElZRl10PKw1&amp;t=635588816547524888" type="text/javascript"></script>
+
+<div>
+
+	<input name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="6426A279" type="hidden">
+	<input name="__PREVIOUSPAGE" id="__PREVIOUSPAGE" value="yM_PyIs5Dm05LV2g2LxXB02rWwa2-ROkDzhmgHdwyLDIG0RDfRaTHgbRIN5jGPBdA7ETR0qkdENSyOd4kKxezEykVEci6bJA39yzlmWUTcKU1OuaMhM7hbRfjzYwGoGVJWnR-w2" type="hidden">
+	<input name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEWBALKweyrBwLSwtXkAgLSwpnTCALM9PumDw85DbYPI0jLn8BF7tztWYT/kCFI" type="hidden">
+</div> 
+     <table style="width:100%" border="0" align="center">
+ <tbody><tr>
+    <td align="center">
+        &nbsp;<input name="ImageButton2" id="ImageButton2" src="../../img/aghead.jpg" style="height:48px;width:251px;border-width:0px;" type="image" align="bottom">
+        &nbsp; &nbsp;</td></tr>
+     <tr>
+     <td align="right">
+         <input name="ImageButton1" id="ImageButton1" src="../../img/HANDs.gif" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ImageButton1&quot;, &quot;&quot;, false, &quot;&quot;, &quot;DatewiseCommodityReport.aspx&quot;, false, false))" style="width:28px;border-width:0px;" type="image"><a id="LinkButton1" href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;LinkButton1&quot;, &quot;&quot;, false, &quot;&quot;, &quot;DatewiseCommodityReport.aspx&quot;, false, true))" style="display:inline-block;width:41px;">Back</a></td>
+     </tr>
+     <tr>
+     <td>
+             <table bordercolor="#266606" border="1" align="center">
+               <tbody><tr>
+                <td style="height: 26px" bgcolor="#ffffe7" align="center"><u>
+                <span id="lblMonth" style="display:inline-block;color:#266606;font-family:Verdana;font-weight:bold;width:591px;"><center>Date Wise Prices for Specified Commodity on  &nbsp;<b><font color="Maroon">July, 2011</font><b></b></b></center></span></u><b><b> 
+                </b></b></td>
+                </tr>
+                          <tr>
+         <td style="height: 20px" bgcolor="#ffffe7" align="center">
+          <span id="lblCommodity" style="display:inline-block;color:#266606;font-family:Verdana;font-weight:bold;width:418px;"><center>Commodity : &nbsp;<font color="Maroon">Potato</font>,  State :&nbsp;<font color="Maroon">Tamil Nadu</font></center></span></td>
+             </tr>
+                       <tr>
+                <td style="height: 20px; width: 222px;" bgcolor="#ffffe7">
+                       <font color="#266606"><b>NR : Not Reported</b> </font>
+                </td>
+                
+            </tr>
+                     <tr>
+                <td bordercolor="#266606" align="center">
+                
+                   <div>
+	<table rules="all" id="gridRecords" style="background-color:Transparent;border-color:#266606;border-collapse:collapse;" border="1" align="Center" cellspacing="0">
+		<tbody><tr valign="middle">
+			<th scope="col" style="color:#266606;background-color:#FFFFE7;border-color:#266606;width:180px;">Market</th><th scope="col" style="color:#266606;background-color:#FFFFE7;border-color:#266606;width:80px;">Arrival Date</th><th scope="col" style="color:#266606;background-color:#FFFFE7;border-color:#266606;width:80px;">Arrivals (Tonnes)</th><th scope="col" style="color:#266606;background-color:#FFFFE7;border-color:#266606;width:180px;">Variety</th><th scope="col" style="color:#266606;background-color:#FFFFE7;border-color:#266606;height:20px;width:80px;">Minimum Price(Rs./Quintal)</th><th scope="col" style="color:#266606;background-color:#FFFFE7;border-color:#266606;width:80px;">Maximum Price(Rs./Quintal)</th><th scope="col" style="color:#266606;background-color:#FFFFE7;border-color:#266606;width:80px;">Modal Price(Rs./Quintal)</th>
+		</tr><tr align="center">
+			<td style="border-color:#266606;font-weight:bold;width:180px;" align="left">Katpadi(Uzhavar Santhai)</td><td style="border-color:#266606;width:80px;">01/07/2011</td><td style="border-color:#266606;width:80px;" align="right">0.55</td><td style="border-color:#266606;width:180px;" align="center">Other</td><td style="border-color:#266606;width:80px;" align="right">1300</td><td style="border-color:#266606;width:80px;" align="right">1300</td><td style="border-color:#266606;width:80px;" align="right">1300</td>
+		</tr><tr align="center">
+			<td style="border-color:#266606;font-weight:bold;width:180px;" align="left"></td><td style="border-color:#266606;width:80px;">04/07/2011</td><td style="border-color:#266606;width:80px;" align="right">0.5</td><td style="border-color:#266606;width:180px;" align="center">Other</td><td style="border-color:#266606;width:80px;" align="right">1400</td><td style="border-color:#266606;width:80px;" align="right">1400</td><td style="border-color:#266606;width:80px;" align="right">1400</td>
+		</tr><tr align="center">
+			<td style="border-color:#266606;font-weight:bold;width:180px;" align="left"></td><td style="border-color:#266606;width:80px;">05/07/2011</td><td style="border-color:#266606;width:80px;" align="right">0.45</td><td style="border-color:#266606;width:180px;" align="center">Other</td><td style="border-color:#266606;width:80px;" align="right">1400</td><td style="border-color:#266606;width:80px;" align="right">1400</td><td style="border-color:#266606;width:80px;" align="right">1400</td>
+		</tr><tr align="center">
+			<td style="border-color:#266606;font-weight:bold;width:180px;" align="left"></td><td style="border-color:#266606;width:80px;">06/07/2011</td><td style="border-color:#266606;width:80px;" align="right">0.5</td><td style="border-color:#266606;width:180px;" align="center">Other</td><td style="border-color:#266606;width:80px;" align="right">1400</td><td style="border-color:#266606;width:80px;" align="right">1400</td><td style="border-color:#266606;width:80px;" align="right">1400</td>
+		</tr><tr align="center">
+			<td style="border-color:#266606;font-weight:bold;width:180px;" align="left"></td><td style="border-color:#266606;width:80px;">07/07/2011</td><td style="border-color:#266606;width:80px;" align="right">0.45</td><td style="border-color:#266606;width:180px;" align="center">Other</td><td style="border-color:#266606;width:80px;" align="right">1400</td><td style="border-color:#266606;width:80px;" align="right">1400</td><td style="border-color:#266606;width:80px;" align="right">1400</td>
+		</tr><tr align="center">
+			<td style="border-color:#266606;font-weight:bold;width:180px;" align="left"></td><td style="border-color:#266606;width:80px;">08/07/2011</td><td style="border-color:#266606;width:80px;" align="right">0.7</td><td style="border-color:#266606;width:180px;" align="center">Other</td><td style="border-color:#266606;width:80px;" align="right">1400</td><td style="border-color:#266606;width:80px;" align="right">1400</td><td style="border-color:#266606;width:80px;" align="right">1400</td>
+		</tr><tr align="center">
+			<td style="border-color:#266606;font-weight:bold;width:180px;" align="left"></td><td style="border-color:#266606;width:80px;">11/07/2011</td><td style="border-color:#266606;width:80px;" align="right">0.45</td><td style="border-color:#266606;width:180px;" align="center">Other</td><td style="border-color:#266606;width:80px;" align="right">1300</td><td style="border-color:#266606;width:80px;" align="right">1300</td><td style="border-color:#266606;width:80px;" align="right">1300</td>
+		</tr><tr align="center">
+			<td style="border-color:#266606;font-weight:bold;width:180px;" align="left"></td><td style="border-color:#266606;width:80px;">12/07/2011</td><td style="border-color:#266606;width:80px;" align="right">0.6</td><td style="border-color:#266606;width:180px;" align="center">Other</td><td style="border-color:#266606;width:80px;" align="right">1300</td><td style="border-color:#266606;width:80px;" align="right">1300</td><td style="border-color:#266606;width:80px;" align="right">1300</td>
+		</tr><tr align="center">
+			<td style="border-color:#266606;font-weight:bold;width:180px;" align="left"></td><td style="border-color:#266606;width:80px;">13/07/2011</td><td style="border-color:#266606;width:80px;" align="right">0.8</td><td style="border-color:#266606;width:180px;" align="center">Other</td><td style="border-color:#266606;width:80px;" align="right">1300</td><td style="border-color:#266606;width:80px;" align="right">1300</td><td style="border-color:#266606;width:80px;" align="right">1300</td>
+		</tr><tr align="center">
+			<td style="border-color:#266606;font-weight:bold;width:180px;" align="left"></td><td style="border-color:#266606;width:80px;">14/07/2011</td><td style="border-color:#266606;width:80px;" align="right">0.7</td><td style="border-color:#266606;width:180px;" align="center">Other</td><td style="border-color:#266606;width:80px;" align="right">1300</td><td style="border-color:#266606;width:80px;" align="right">1300</td><td style="border-color:#266606;width:80px;" align="right">1300</td>
+		</tr><tr align="center">
+			<td style="border-color:#266606;font-weight:bold;width:180px;" align="left"></td><td style="border-color:#266606;width:80px;">15/07/2011</td><td style="border-color:#266606;width:80px;" align="right">0.7</td><td style="border-color:#266606;width:180px;" align="center">Other</td><td style="border-color:#266606;width:80px;" align="right">1300</td><td style="border-color:#266606;width:80px;" align="right">1300</td><td style="border-color:#266606;width:80px;" align="right">1300</td>
+		</tr><tr align="center">
+			<td style="border-color:#266606;font-weight:bold;width:180px;" align="left"></td><td style="border-color:#266606;width:80px;">19/07/2011</td><td style="border-color:#266606;width:80px;" align="right">0.55</td><td style="border-color:#266606;width:180px;" align="center">Other</td><td style="border-color:#266606;width:80px;" align="right">1300</td><td style="border-color:#266606;width:80px;" align="right">1300</td><td style="border-color:#266606;width:80px;" align="right">1300</td>
+		</tr><tr align="center">
+			<td style="border-color:#266606;font-weight:bold;width:180px;" align="left"></td><td style="border-color:#266606;width:80px;">20/07/2011</td><td style="border-color:#266606;width:80px;" align="right">0.35</td><td style="border-color:#266606;width:180px;" align="center">Other</td><td style="border-color:#266606;width:80px;" align="right">1300</td><td style="border-color:#266606;width:80px;" align="right">1300</td><td style="border-color:#266606;width:80px;" align="right">1300</td>
+		</tr><tr align="center">
+			<td style="border-color:#266606;font-weight:bold;width:180px;" align="left"></td><td style="border-color:#266606;width:80px;">21/07/2011</td><td style="border-color:#266606;width:80px;" align="right">0.75</td><td style="border-color:#266606;width:180px;" align="center">Other</td><td style="border-color:#266606;width:80px;" align="right">1400</td><td style="border-color:#266606;width:80px;" align="right">1400</td><td style="border-color:#266606;width:80px;" align="right">1400</td>
+		</tr><tr align="center">
+			<td style="border-color:#266606;font-weight:bold;width:180px;" align="left"></td><td style="border-color:#266606;width:80px;">22/07/2011</td><td style="border-color:#266606;width:80px;" align="right">0.35</td><td style="border-color:#266606;width:180px;" align="center">Other</td><td style="border-color:#266606;width:80px;" align="right">1400</td><td style="border-color:#266606;width:80px;" align="right">1400</td><td style="border-color:#266606;width:80px;" align="right">1400</td>
+		</tr><tr align="center">
+			<td style="border-color:#266606;font-weight:bold;width:180px;" align="left"></td><td style="border-color:#266606;width:80px;">25/07/2011</td><td style="border-color:#266606;width:80px;" align="right">0.9</td><td style="border-color:#266606;width:180px;" align="center">Other</td><td style="border-color:#266606;width:80px;" align="right">1400</td><td style="border-color:#266606;width:80px;" align="right">1400</td><td style="border-color:#266606;width:80px;" align="right">1400</td>
+		</tr><tr align="center">
+			<td style="border-color:#266606;font-weight:bold;width:180px;" align="left"></td><td style="border-color:#266606;width:80px;">26/07/2011</td><td style="border-color:#266606;width:80px;" align="right">0.55</td><td style="border-color:#266606;width:180px;" align="center">Other</td><td style="border-color:#266606;width:80px;" align="right">1400</td><td style="border-color:#266606;width:80px;" align="right">1400</td><td style="border-color:#266606;width:80px;" align="right">1400</td>
+		</tr><tr align="center">
+			<td style="border-color:#266606;font-weight:bold;width:180px;" align="left"></td><td style="border-color:#266606;width:80px;">27/07/2011</td><td style="border-color:#266606;width:80px;" align="right">0.45</td><td style="border-color:#266606;width:180px;" align="center">Other</td><td style="border-color:#266606;width:80px;" align="right">1400</td><td style="border-color:#266606;width:80px;" align="right">1400</td><td style="border-color:#266606;width:80px;" align="right">1400</td>
+		</tr><tr align="center">
+			<td style="border-color:#266606;font-weight:bold;width:180px;" align="left"></td><td style="border-color:#266606;width:80px;">28/07/2011</td><td style="border-color:#266606;width:80px;" align="right">0.55</td><td style="border-color:#266606;width:180px;" align="center">Other</td><td style="border-color:#266606;width:80px;" align="right">1400</td><td style="border-color:#266606;width:80px;" align="right">1400</td><td style="border-color:#266606;width:80px;" align="right">1400</td>
+		</tr><tr align="center">
+			<td style="border-color:#266606;font-weight:bold;width:180px;" align="left"></td><td style="border-color:#266606;width:80px;">29/07/2011</td><td style="border-color:#266606;width:80px;" align="right">0.5</td><td style="border-color:#266606;width:180px;" align="center">Other</td><td style="border-color:#266606;width:80px;" align="right">1300</td><td style="border-color:#266606;width:80px;" align="right">1300</td><td style="border-color:#266606;width:80px;" align="right">1300</td>
+		</tr>
+	</tbody></table>
+</div> 
+                 </td>
+            </tr>  
+            </tbody></table>   
+            </td></tr></tbody></table>                              
+        <br>
+                
+    </form>
+    
+
+
+</body></html>

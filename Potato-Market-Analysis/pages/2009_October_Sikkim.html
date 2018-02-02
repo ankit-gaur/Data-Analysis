@@ -1,0 +1,93 @@
+<html xmlns="http://www.w3.org/1999/xhtml"><head><title>
+	Date Wise Prices
+</title></head> 
+					
+<body>
+    <form name="form1" method="post" action="DatewiseCommodityReport2.aspx" id="form1">
+<div>
+<input name="__EVENTTARGET" id="__EVENTTARGET" value="" type="hidden">
+<input name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" type="hidden">
+<input name="__VIEWSTATE" id="__VIEWSTATE" value="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" type="hidden">
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['form1'];
+if (!theForm) {
+    theForm = document.form1;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="/WebResource.axd?d=xMVbV6tmVFtLyoWuLyzBFfAWWzYrhtbkLfW4r2k0E2IwZtE2-dbcS0ht9XKgaNE1zrLIjezHIIsEVXIdkElZRl10PKw1&amp;t=635588816547524888" type="text/javascript"></script>
+
+<div>
+
+	<input name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="6426A279" type="hidden">
+	<input name="__PREVIOUSPAGE" id="__PREVIOUSPAGE" value="yM_PyIs5Dm05LV2g2LxXB02rWwa2-ROkDzhmgHdwyLDIG0RDfRaTHgbRIN5jGPBdA7ETR0qkdENSyOd4kKxezEykVEci6bJA39yzlmWUTcKU1OuaMhM7hbRfjzYwGoGVJWnR-w2" type="hidden">
+	<input name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEWBAKYi+SSBALSwtXkAgLSwpnTCALM9PumDy1pLk5bERr0op0kHjIC5Fytegiv" type="hidden">
+</div> 
+     <table style="width:100%" border="0" align="center">
+ <tbody><tr>
+    <td align="center">
+        &nbsp;<input name="ImageButton2" id="ImageButton2" src="../../img/aghead.jpg" style="height:48px;width:251px;border-width:0px;" type="image" align="bottom">
+        &nbsp; &nbsp;</td></tr>
+     <tr>
+     <td align="right">
+         <input name="ImageButton1" id="ImageButton1" src="../../img/HANDs.gif" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ImageButton1&quot;, &quot;&quot;, false, &quot;&quot;, &quot;DatewiseCommodityReport.aspx&quot;, false, false))" style="width:28px;border-width:0px;" type="image"><a id="LinkButton1" href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;LinkButton1&quot;, &quot;&quot;, false, &quot;&quot;, &quot;DatewiseCommodityReport.aspx&quot;, false, true))" style="display:inline-block;width:41px;">Back</a></td>
+     </tr>
+     <tr>
+     <td>
+             <table bordercolor="#266606" border="1" align="center">
+               <tbody><tr>
+                <td style="height: 26px" bgcolor="#ffffe7" align="center"><u>
+                <span id="lblMonth" style="display:inline-block;color:#266606;font-family:Verdana;font-weight:bold;width:591px;"><center>Date Wise Prices for Specified Commodity on  &nbsp;<b><font color="Maroon">October, 2009</font><b></b></b></center></span></u><b><b> 
+                </b></b></td>
+                </tr>
+                          <tr>
+         <td style="height: 20px" bgcolor="#ffffe7" align="center">
+          <span id="lblCommodity" style="display:inline-block;color:#266606;font-family:Verdana;font-weight:bold;width:418px;"><center>Commodity : &nbsp;<font color="Maroon">Potato</font>,  State :&nbsp;<font color="Maroon">Sikkim</font></center></span></td>
+             </tr>
+                       <tr>
+                <td style="height: 20px; width: 222px;" bgcolor="#ffffe7">
+                       <font color="#266606"><b>NR : Not Reported</b> </font>
+                </td>
+                
+            </tr>
+                     <tr>
+                <td bordercolor="#266606" align="center">
+                
+                   <div>
+	<table rules="all" id="gridRecords" style="background-color:Transparent;border-color:#266606;border-collapse:collapse;" border="1" align="Center" cellspacing="0">
+		<tbody><tr valign="middle">
+			<th scope="col" style="color:#266606;background-color:#FFFFE7;border-color:#266606;width:180px;">Market</th><th scope="col" style="color:#266606;background-color:#FFFFE7;border-color:#266606;width:80px;">Arrival Date</th><th scope="col" style="color:#266606;background-color:#FFFFE7;border-color:#266606;width:80px;">Arrivals (Tonnes)</th><th scope="col" style="color:#266606;background-color:#FFFFE7;border-color:#266606;width:180px;">Variety</th><th scope="col" style="color:#266606;background-color:#FFFFE7;border-color:#266606;height:20px;width:80px;">Minimum Price(Rs./Quintal)</th><th scope="col" style="color:#266606;background-color:#FFFFE7;border-color:#266606;width:80px;">Maximum Price(Rs./Quintal)</th><th scope="col" style="color:#266606;background-color:#FFFFE7;border-color:#266606;width:80px;">Modal Price(Rs./Quintal)</th>
+		</tr><tr align="center">
+			<td style="border-color:#266606;font-weight:bold;width:180px;" align="left">Melli</td><td style="border-color:#266606;width:80px;">27/10/2009</td><td style="border-color:#266606;width:80px;" align="right">4.1</td><td style="border-color:#266606;width:180px;" align="center">Local</td><td style="border-color:#266606;width:80px;" align="right">2200</td><td style="border-color:#266606;width:80px;" align="right">2500</td><td style="border-color:#266606;width:80px;" align="right">2350</td>
+		</tr><tr align="center">
+			<td style="border-color:#266606;font-weight:bold;width:180px;" align="left">Rangpo</td><td style="border-color:#266606;width:80px;">05/10/2009</td><td style="border-color:#266606;width:80px;" align="right">0.87</td><td style="border-color:#266606;width:180px;" align="center">Other</td><td style="border-color:#266606;width:80px;" align="right">2400</td><td style="border-color:#266606;width:80px;" align="right">2500</td><td style="border-color:#266606;width:80px;" align="right">2450</td>
+		</tr><tr align="center">
+			<td style="border-color:#266606;font-weight:bold;width:180px;" align="left"></td><td style="border-color:#266606;width:80px;">12/10/2009</td><td style="border-color:#266606;width:80px;" align="right">1.09</td><td style="border-color:#266606;width:180px;" align="center">Other</td><td style="border-color:#266606;width:80px;" align="right">2200</td><td style="border-color:#266606;width:80px;" align="right">2700</td><td style="border-color:#266606;width:80px;" align="right">2400</td>
+		</tr><tr align="center">
+			<td style="border-color:#266606;font-weight:bold;width:180px;" align="left"></td><td style="border-color:#266606;width:80px;">26/10/2009</td><td style="border-color:#266606;width:80px;" align="right">2.2</td><td style="border-color:#266606;width:180px;" align="center">Other</td><td style="border-color:#266606;width:80px;" align="right">2200</td><td style="border-color:#266606;width:80px;" align="right">2400</td><td style="border-color:#266606;width:80px;" align="right">2300</td>
+		</tr>
+	</tbody></table>
+</div> 
+                 </td>
+            </tr>  
+            </tbody></table>   
+            </td></tr></tbody></table>                              
+        <br>
+                
+    </form>
+    
+
+
+</body></html>

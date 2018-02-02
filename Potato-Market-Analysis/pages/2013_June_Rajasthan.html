@@ -1,0 +1,288 @@
+<html xmlns="http://www.w3.org/1999/xhtml"><head><title>
+	Date Wise Prices
+</title></head>
+<body>
+    <form name="form1" method="post" action="DatewiseCommodityReport2.aspx" id="form1">
+<div>
+<input name="__EVENTTARGET" id="__EVENTTARGET" value="" type="hidden">
+<input name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" type="hidden">
+<input name="__LASTFOCUS" id="__LASTFOCUS" value="" type="hidden">
+<input name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUJODM1ODc5NTEzD2QWAgIDD2QWEAIIDxBkEBUTES0tLVNlbGVjdCBZZWFyLS0tBDIwMDAEMjAwMQQyMDAyBDIwMDMEMjAwNAQyMDA1BDIwMDYEMjAwNwQyMDA4BDIwMDkEMjAxMAQyMDExBDIwMTIEMjAxMwQyMDE0BDIwMTUEMjAxNgQyMDE3FRMRLS0tU2VsZWN0IFllYXItLS0EMjAwMAQyMDAxBDIwMDIEMjAwMwQyMDA0BDIwMDUEMjAwNgQyMDA3BDIwMDgEMjAwOQQyMDEwBDIwMTEEMjAxMgQyMDEzBDIwMTQEMjAxNQQyMDE2BDIwMTcUKwMTZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZxYBAg5kAgwPEGQPFg1mAgECAgIDAgQCBQIGAgcCCAIJAgoCCwIMFg0QBRAtLVNlbGVjdCBNb250aC0tBRAtLVNlbGVjdCBNb250aC0tZxAFB0phbnVhcnkFB0phbnVhcnlnEAUIRmVicnVhcnkFCEZlYnJ1YXJ5ZxAFBU1hcmNoBQVNYXJjaGcQBQVBcHJpbAUFQXByaWxnEAUDTWF5BQNNYXlnEAUESnVuZQUESnVuZWcQBQRKdWx5BQRKdWx5ZxAFBkF1Z3VzdAUGQXVndXN0ZxAFCVNlcHRlbWJlcgUJU2VwdGVtYmVyZxAFB09jdG9iZXIFB09jdG9iZXJnEAUITm92ZW1iZXIFCE5vdmVtYmVyZxAFCERlY2VtYmVyBQhEZWNlbWJlcmcWAQIGZAIODw8WBB4EVGV4dAUHU3RhdGUgOh4HVmlzaWJsZWdkZAIQDxAPFgIfAWdkEBUeEy0tLVNlbGVjdCBTdGF0ZS0tLS0OQW5kaHJhIFByYWRlc2gFQXNzYW0FQmloYXIKQ2hhbmRpZ2FyaAtDaGF0dGlzZ2FyaANHb2EHR3VqYXJhdAdIYXJ5YW5hEEhpbWFjaGFsIFByYWRlc2gRSmFtbXUgYW5kIEthc2htaXIJSmhhcmtoYW5kCUthcm5hdGFrYQZLZXJhbGEOTWFkaHlhIFByYWRlc2gLTWFoYXJhc2h0cmEHTWFuaXB1cglNZWdoYWxheWEHTWl6b3JhbQxOQ1Qgb2YgRGVsaGkGT3Jpc3NhC1BvbmRpY2hlcnJ5BlB1bmphYglSYWphc3RoYW4KVGFtaWwgTmFkdQlUZWxhbmdhbmEHVHJpcHVyYQ1VdHRhciBQcmFkZXNoClV0dHJha2hhbmQLV2VzdCBCZW5nYWwVHhMtLS1TZWxlY3QgU3RhdGUtLS0tDkFuZGhyYSBQcmFkZXNoBUFzc2FtBUJpaGFyCkNoYW5kaWdhcmgLQ2hhdHRpc2dhcmgDR29hB0d1amFyYXQHSGFyeWFuYRBIaW1hY2hhbCBQcmFkZXNoEUphbW11IGFuZCBLYXNobWlyCUpoYXJraGFuZAlLYXJuYXRha2EGS2VyYWxhDk1hZGh5YSBQcmFkZXNoC01haGFyYXNodHJhB01hbmlwdXIJTWVnaGFsYXlhB01pem9yYW0MTkNUIG9mIERlbGhpBk9yaXNzYQtQb25kaWNoZXJyeQZQdW5qYWIJUmFqYXN0aGFuClRhbWlsIE5hZHUJVGVsYW5nYW5hB1RyaXB1cmENVXR0YXIgUHJhZGVzaApVdHRyYWtoYW5kC1dlc3QgQmVuZ2FsFCsDHmdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZxYBAhdkAhIPDxYEHwAFC0NvbW1vZGl0eSA6HwFnZGQCFA8QDxYEHgtfIURhdGFCb3VuZGcfAWdkEBVnFC0tU2VsZWN0IENvbW1vZGl0eS0tBUFqd2FuCkFtYXJhbnRodXMPQW1sYShOZWxsaSBLYWkpBUFwcGxlFEFyaGFyIChUdXIvUmVkIEdyYW0pGUJhanJhKFBlYXJsIE1pbGxldC9DdW1idSkHQmFsZWthaQZCYW5hbmEMQmFybGV5IChKYXUpCEJlZXRyb290EUJlbmdhbCBHcmFtKEdyYW0pFUJoaW5kaShMYWRpZXMgRmluZ2VyKQhCaWcgR3JhbQxCaXR0ZXIgZ291cmQWQmxhY2sgR3JhbSAoVXJkIEJlYW5zKRhCbGFjayBHcmFtIERhbCAoVXJkIERhbCkMQm90dGxlIGdvdXJkB0JyaW5qYWwHQ2FiYmFnZQhDYXBzaWN1bQZDYXJyb3QLQ2FzdG9yIFNlZWQLQ2F1bGlmbG93ZXIPQ2hpa29vcyhTYXBvdGEpCUNoaWxpIFJlZA9DaGlsbHkgQ2Fwc2ljdW0NQ2x1c3RlciBiZWFucwlDb2xhY2FzaWERQ29yaWFuZGVyKExlYXZlcykPQ29ycmlhbmRlciBzZWVkBkNvdHRvbhdDb3dwZWEgKExvYmlhL0thcmFtYW5pKRBDdWN1bWJhcihLaGVlcmEpEkN1bW1pbiBTZWVkKEplZXJhKQxEcnkgQ2hpbGxpZXMGR2FybGljC0dpbmdlcihEcnkpDUdpbmdlcihHcmVlbikGR3JhcGVzDEdyZWVuIENoaWxsaRJHcmVlbiBHcmFtIChNb29uZykaR3JlZW4gR3JhbSBEYWwgKE1vb25nIERhbCkKR3JlZW4gUGVhcwlHcm91bmRudXQUR3JvdW5kbnV0IHBvZHMgKHJhdykER3VhcgxHdXIoSmFnZ2VyeSkSSXNhYmd1bCAoUHN5bGxpdW0pDkpvd2FyKFNvcmdodW0pHUthYnVsaSBDaGFuYShDaGlja3BlYXMtV2hpdGUpE0thcmJ1amEoTXVzayBNZWxvbikGS2lubm93Ekt1bHRoaShIb3JzZSBHcmFtKQVMZW1vbg1MZW50aWwoTWFzdXIpBExpbWUHTGluc2VlZAZMaXRjaGkRTG9uZyBNZWxvbihLYWtyaSkFTWFpemUFTWFuZ28QTWFuZ28gKFJhdy1SaXBlKQlNYXN1ciBEYWwLTWV0aGkgU2VlZHMNTWV0aGkoTGVhdmVzKQxNaW50KFB1ZGluYSkUTW91c2FtYmkoU3dlZXQgTGltZSkHTXVzdGFyZAVPbmlvbgtPbmlvbiBHcmVlbgZPcmFuZ2UMT3RoZXIgUHVsc2VzC1BhZGR5KERoYW4pBlBhcGF5YQVQZWFjaA5QZWFyKE1hcmFzZWJ1KQhQZWFzIGNvZAlQZWFzKERyeSkKUGluZSBBcHBsZQRQbHVtC1BvbWVncmFuYXRlBlBvdGF0bwdQdW1wa2luCFJlZCBHcmFtBFJpY2UQUmlkZ2VndWFyZChUb3JpKQtSb3NlKExvb3NlKQtSb3VuZCBnb3VyZBxTZXNhbXVtKFNlc2FtZSxHaW5nZWxseSxUaWwpBVNvYW5mCFNveWFiZWFuB1NwaW5hY2gFU3VnYXIJU3VuZmxvd2VyDFN3ZWV0IFBvdGF0bwhUYXJhbWlyYQVUaW5kYQZUb21hdG8FVG9yaWELV2F0ZXIgTWVsb24FV2hlYXQEV29vbBVnFC0tU2VsZWN0IENvbW1vZGl0eS0tAzEzNwI4NgMzNTUCMTcCNDkCMjgDMjc0AjE5AjI5AzE1NwE2Ajg1AzExMwI4MQE4AzI2NAI4MgIzNQMxNTQDMTY0AzE1MwMxMjMCMzQCNzECMjYCODgCODADMzE4AjQzAzEwOAIxNQI5MgMxNTkCNDIDMTMyAjI1AjI3AzEwMwIyMgI4NwE5AzI2NQI1MAIxMAMzMTICNzUCNzQDMjU2ATUDMzYyAzE4NwMzMzYDMTE0AzMxMAI2MwMxODACNjcDMzUxAzMwNAE0AjIwAzE3MgMyNTkCNDcCNDYDMzYwAjc3AjEyAjIzAzM1OAIxOAI5NwEyAjcyAzMzMQMzMzADMzA4AzM0NwIyMQMzMjkDMTkwAjI0Ajg0ATcBMwMxNjADMjI4AzMwNgIxMQMxMzUCMTMDMzQyAjQ4AjE0AzE1MgI3NgMzNDkCNzgCNjYCNzMBMQMzNDgUKwNnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZxYBAlJkAhoPDxYCHwFnZGQCGw8PFgIfAWdkZBgBBR5fX0NvbnRyb2xzUmVxdWlyZVBvc3RCYWNrS2V5X18WAwUMSW1hZ2VCdXR0b24yBQxJbWFnZUJ1dHRvbjEFC0NhbGFfQnV0dG9um+rx2vLpFGQJ+vEDNyoK24bekVA=" type="hidden">
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['form1'];
+if (!theForm) {
+    theForm = document.form1;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="/WebResource.axd?d=xMVbV6tmVFtLyoWuLyzBFfAWWzYrhtbkLfW4r2k0E2IwZtE2-dbcS0ht9XKgaNE1zrLIjezHIIsEVXIdkElZRl10PKw1&amp;t=635588816547524888" type="text/javascript"></script>
+
+<div>
+
+	<input name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="64F0D178" type="hidden">
+	<input name="__PREVIOUSPAGE" id="__PREVIOUSPAGE" value="afFCp7-XxsElibX1oqVLLeWPqGN7k1mqQtltwz-9IFCObo4qTb-q_077Oj8uFb97kpEASsLy0cEC_oxSjaLyCt0dZJjjCxThJu6EmrnUD147BhR66iiTJbIDWD6PvgTaE5IPMA2" type="hidden">
+	<input name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEWtwEClr+7gAgC0sLV5AIC0sKZ0wgCzPT7pg8C29HrBALltPS/CgLz/6YDAvP/0qgHAvP/ztUOAvP/+vIFAvP/lp4NAvP/grsEAvP/vuALAvP/qo0DAvP/huQFAvP/soENApjGgJgKApjGvMUBApjGqOIIApjGxA8CmMbwtAcCmMbs0Q4CmMaY/QUCmMa0mg0Ch6SLoA0CrIHzsgkC5967iwUCqPHfiQ0C1oqkEQL+ibDyCQKHpY/4BAK9hsmTBwKD9L2hBwKo67LZAQK+nIDBDgKk+7fFDwLbqfu6AwLIgcWbAQKApJvuBwKjkJPjBQLR9tCaBgKVs7blDgK0h7GBDAKgjMDdCQLj7MbNAQL++cy7CgK3oeC6BgKWj6PICAKyvbq/CwKAz7ntAgKC5svyAwKDzpqIDAKXitiICQLY3Z1mAvWA/q4KApG97/sEAuL/zOcFAqiYhqsDAsz9yK4HAvOpm+UHAvSU6aoPAvm7mpwCAsKdkOgCAvzc45AOArWf5ZMNApXFvOkMAv+m6rMIAr6HiecFAomh/58JAs/ExzYCnLH7rwECqcqV+AIC16uV2wwC4fjJkg4CwKuJ2wwCw6vB2AwCwavN2AwC25evuAQCwKvB2AwCwavB2AwCqcqN+AICxavt2AwC16uR2wwCta2lzwkC16uh2wwC16vt2AwC25eruAQC16ul2wwCwquR2wwC2pe3uAQC2peruAQCta2VzwkCta2ZzwkCwqud2wwCxquh2wwCwauV2wwC16vN2AwC16ut2wwCgKDdpgoCw6uZ2wwCnqDZpgoCwKuR2wwC2Kul2wwCo4nvkwQCw6ul2wwCkMT60g8CwauR2wwCwauJ2wwCta2hzwkCwaul2wwC16uJ2wwC2Kvt2AwC4PjNkg4CxKut2wwCwKut2wwCksSC0g8CxquR2wwCxqud2wwCheHrjwgCxKvt2AwCksT20g8Cqcq5+AIChuHzjwgC2pfHuQQC6OrOjAsCxauZ2wwC5urqjAsCxauJ2wwCjdPQ+QUC3JfDuQQCw6vt2AwCwaut2wwCkMTq0g8CpInvkwQCw6uJ2wwCw6uV2wwC6OqyjwsCxquJ2wwCwKul2wwCwauZ2wwCgKDNpgoCwKvN2AwC2KuJ2wwCwavt2AwCxqul2wwCjdPY+QUC6OrGjAsCgKDZpgoCq8qJ+AICwauh2wwCpYnzkwQC5urujAsCwaud2wwC16ud2wwCxqvt2AwCwqvt2AwC5uqyjwsCn6DRpgoChuGHjwgCwKuh2wwC//jRkg4CwKuZ2wwCksT+0g8Cw6vN2AwCwKud2wwCkMTy0g8CxquV2wwCpYnrkwQCxqvN2AwCxauV2wwCxquZ2wwCwKvt2AwCgKDJpgoCsdqGzQsCwova3gMCoLew/QoCmaCGmQQCm6Ce2QIC2PnM0wsCvqyxkgcC97HUnQoC56u5lAoC3fO2dHRZE90zMQdpoC9P3fm63iHGmcXw" type="hidden">
+</div>
+       <table style="width:100%" border="0" align="center">
+       <tbody><tr>
+    <td align="center">
+        &nbsp;<input name="ImageButton2" id="ImageButton2" src="../../img/aghead.jpg" style="height:48px;width:251px;border-width:0px;" type="image" align="bottom">
+        &nbsp; &nbsp;</td></tr>
+     <tr>
+     <td align="right">
+     <input name="ImageButton1" id="ImageButton1" src="../../img/HANDs.gif" style="width:28px;border-width:0px;" type="image"><a id="LinkButton1" href="javascript:__doPostBack('LinkButton1','')" style="display:inline-block;width:41px;">Back</a>
+     </td></tr>
+     <tr>
+     <td>
+    <table width="50%" bordercolor="#266606" border="1" bgcolor="#ffffe7" align="center" cellpadding="1">
+    <tbody><tr>
+      <td colspan="3" style="height: 18px; width: 622px;" align="center">
+            <font color="#266606"><b><u>Date-Wise Prices For Specified Commodity</u></b></font></td>
+    </tr>   
+        
+    
+    <tr>
+      <td style="height: 28px; width: 259px;" align="right">   
+            <font color="#266606"><b> </b></font><span id="lblYear" style="display:inline-block;color:#266606;font-weight:bold;height:19px;width:69px;">Year :</span></td>
+      <td style="width: 258px"><select name="cboYear" onchange="javascript:setTimeout('__doPostBack(\'cboYear\',\'\')', 0)" id="cboYear" style="height:22px;width:115px;">
+	<option value="---Select Year---">---Select Year---</option>
+	<option value="2000">2000</option>
+	<option value="2001">2001</option>
+	<option value="2002">2002</option>
+	<option value="2003">2003</option>
+	<option value="2004">2004</option>
+	<option value="2005">2005</option>
+	<option value="2006">2006</option>
+	<option value="2007">2007</option>
+	<option value="2008">2008</option>
+	<option value="2009">2009</option>
+	<option value="2010">2010</option>
+	<option value="2011">2011</option>
+	<option value="2012">2012</option>
+	<option selected="selected" value="2013">2013</option>
+	<option value="2014">2014</option>
+	<option value="2015">2015</option>
+	<option value="2016">2016</option>
+	<option value="2017">2017</option>
+
+</select>
+          </td>
+     
+      </tr>
+        <tr>
+            <td style="height: 23px; width: 259px;" align="right">
+                <span id="lblMonth" style="display:inline-block;color:#266606;font-weight:bold;height:19px;width:69px;">Month :</span>
+                </td>
+                <td style="width: 258px">
+                <select name="cboMonth" onchange="javascript:setTimeout('__doPostBack(\'cboMonth\',\'\')', 0)" id="cboMonth" style="height:22px;width:114px;">
+	<option value="--Select Month--">--Select Month--</option>
+	<option value="January">January</option>
+	<option value="February">February</option>
+	<option value="March">March</option>
+	<option value="April">April</option>
+	<option value="May">May</option>
+	<option selected="selected" value="June">June</option>
+	<option value="July">July</option>
+	<option value="August">August</option>
+	<option value="September">September</option>
+	<option value="October">October</option>
+	<option value="November">November</option>
+	<option value="December">December</option>
+
+</select>
+                    </td>
+        </tr>
+        <tr>
+            <td style="width: 259px;" align="right">
+               <font color="#266606"><b>  
+                   <span id="lblState" style="display:inline-block;color:#266606;font-weight:bold;height:19px;width:69px;">State :</span> </b></font> 
+            </td>
+            <td style="width: 258px">
+            <select name="cboState" onchange="javascript:setTimeout('__doPostBack(\'cboState\',\'\')', 0)" id="cboState" style="height:22px;width:191px;">
+	<option value="---Select State----">---Select State----</option>
+	<option value="Andhra Pradesh">Andhra Pradesh</option>
+	<option value="Assam">Assam</option>
+	<option value="Bihar">Bihar</option>
+	<option value="Chandigarh">Chandigarh</option>
+	<option value="Chattisgarh">Chattisgarh</option>
+	<option value="Goa">Goa</option>
+	<option value="Gujarat">Gujarat</option>
+	<option value="Haryana">Haryana</option>
+	<option value="Himachal Pradesh">Himachal Pradesh</option>
+	<option value="Jammu and Kashmir">Jammu and Kashmir</option>
+	<option value="Jharkhand">Jharkhand</option>
+	<option value="Karnataka">Karnataka</option>
+	<option value="Kerala">Kerala</option>
+	<option value="Madhya Pradesh">Madhya Pradesh</option>
+	<option value="Maharashtra">Maharashtra</option>
+	<option value="Manipur">Manipur</option>
+	<option value="Meghalaya">Meghalaya</option>
+	<option value="Mizoram">Mizoram</option>
+	<option value="NCT of Delhi">NCT of Delhi</option>
+	<option value="Orissa">Orissa</option>
+	<option value="Pondicherry">Pondicherry</option>
+	<option value="Punjab">Punjab</option>
+	<option selected="selected" value="Rajasthan">Rajasthan</option>
+	<option value="Tamil Nadu">Tamil Nadu</option>
+	<option value="Telangana">Telangana</option>
+	<option value="Tripura">Tripura</option>
+	<option value="Uttar Pradesh">Uttar Pradesh</option>
+	<option value="Uttrakhand">Uttrakhand</option>
+	<option value="West Bengal">West Bengal</option>
+
+</select>
+                </td>
+        </tr>
+    <tr>
+    
+      <td style="width: 259px" valign="baseline" align="right"><span id="lblCommodity" style="display:inline-block;color:#266606;font-weight:bold;height:19px;width:69px;">Commodity :</span></td>
+          <td style="width: 258px">
+                <select name="cboCommodity" onchange="javascript:setTimeout('__doPostBack(\'cboCommodity\',\'\')', 0)" id="cboCommodity" style="height:22px;width:191px;">
+	<option value="--Select Commodity--">--Select Commodity--</option>
+	<option value="137">Ajwan</option>
+	<option value="86">Amaranthus</option>
+	<option value="355">Amla(Nelli Kai)</option>
+	<option value="17">Apple</option>
+	<option value="49">Arhar (Tur/Red Gram)</option>
+	<option value="28">Bajra(Pearl Millet/Cumbu)</option>
+	<option value="274">Balekai</option>
+	<option value="19">Banana</option>
+	<option value="29">Barley (Jau)</option>
+	<option value="157">Beetroot</option>
+	<option value="6">Bengal Gram(Gram)</option>
+	<option value="85">Bhindi(Ladies Finger)</option>
+	<option value="113">Big Gram</option>
+	<option value="81">Bitter gourd</option>
+	<option value="8">Black Gram (Urd Beans)</option>
+	<option value="264">Black Gram Dal (Urd Dal)</option>
+	<option value="82">Bottle gourd</option>
+	<option value="35">Brinjal</option>
+	<option value="154">Cabbage</option>
+	<option value="164">Capsicum</option>
+	<option value="153">Carrot</option>
+	<option value="123">Castor Seed</option>
+	<option value="34">Cauliflower</option>
+	<option value="71">Chikoos(Sapota)</option>
+	<option value="26">Chili Red</option>
+	<option value="88">Chilly Capsicum</option>
+	<option value="80">Cluster beans</option>
+	<option value="318">Colacasia</option>
+	<option value="43">Coriander(Leaves)</option>
+	<option value="108">Corriander seed</option>
+	<option value="15">Cotton</option>
+	<option value="92">Cowpea (Lobia/Karamani)</option>
+	<option value="159">Cucumbar(Kheera)</option>
+	<option value="42">Cummin Seed(Jeera)</option>
+	<option value="132">Dry Chillies</option>
+	<option value="25">Garlic</option>
+	<option value="27">Ginger(Dry)</option>
+	<option value="103">Ginger(Green)</option>
+	<option value="22">Grapes</option>
+	<option value="87">Green Chilli</option>
+	<option value="9">Green Gram (Moong)</option>
+	<option value="265">Green Gram Dal (Moong Dal)</option>
+	<option value="50">Green Peas</option>
+	<option value="10">Groundnut</option>
+	<option value="312">Groundnut pods (raw)</option>
+	<option value="75">Guar</option>
+	<option value="74">Gur(Jaggery)</option>
+	<option value="256">Isabgul (Psyllium)</option>
+	<option value="5">Jowar(Sorghum)</option>
+	<option value="362">Kabuli Chana(Chickpeas-White)</option>
+	<option value="187">Karbuja(Musk Melon)</option>
+	<option value="336">Kinnow</option>
+	<option value="114">Kulthi(Horse Gram)</option>
+	<option value="310">Lemon</option>
+	<option value="63">Lentil(Masur)</option>
+	<option value="180">Lime</option>
+	<option value="67">Linseed</option>
+	<option value="351">Litchi</option>
+	<option value="304">Long Melon(Kakri)</option>
+	<option value="4">Maize</option>
+	<option value="20">Mango</option>
+	<option value="172">Mango (Raw-Ripe)</option>
+	<option value="259">Masur Dal</option>
+	<option value="47">Methi Seeds</option>
+	<option value="46">Methi(Leaves)</option>
+	<option value="360">Mint(Pudina)</option>
+	<option value="77">Mousambi(Sweet Lime)</option>
+	<option value="12">Mustard</option>
+	<option value="23">Onion</option>
+	<option value="358">Onion Green</option>
+	<option value="18">Orange</option>
+	<option value="97">Other Pulses</option>
+	<option value="2">Paddy(Dhan)</option>
+	<option value="72">Papaya</option>
+	<option value="331">Peach</option>
+	<option value="330">Pear(Marasebu)</option>
+	<option value="308">Peas cod</option>
+	<option value="347">Peas(Dry)</option>
+	<option value="21">Pine Apple</option>
+	<option value="329">Plum</option>
+	<option value="190">Pomegranate</option>
+	<option selected="selected" value="24">Potato</option>
+	<option value="84">Pumpkin</option>
+	<option value="7">Red Gram</option>
+	<option value="3">Rice</option>
+	<option value="160">Ridgeguard(Tori)</option>
+	<option value="228">Rose(Loose)</option>
+	<option value="306">Round gourd</option>
+	<option value="11">Sesamum(Sesame,Gingelly,Til)</option>
+	<option value="135">Soanf</option>
+	<option value="13">Soyabean</option>
+	<option value="342">Spinach</option>
+	<option value="48">Sugar</option>
+	<option value="14">Sunflower</option>
+	<option value="152">Sweet Potato</option>
+	<option value="76">Taramira</option>
+	<option value="349">Tinda</option>
+	<option value="78">Tomato</option>
+	<option value="66">Toria</option>
+	<option value="73">Water Melon</option>
+	<option value="1">Wheat</option>
+	<option value="348">Wool</option>
+
+</select></td>
+    </tr> 
+   
+       
+    <tr>
+       <td colspan="3" style="width: 723px">
+          
+       </td>
+     </tr>
+     <tr align="center">
+        <td colspan="3" style="width: 723px">
+        <!--<input type="image" name="Cala_Button" id="Cala_Button" src="../../images/search_img_blue.gif" style="height:21px;width:35px;border-width:0px;z-index: 103; left: 815px; position: absolute; top: 295px" />
+           &nbsp;
+        <span id="Label4" disabled="disabled" style="display:inline-block;color:IndianRed;font-weight:bold;text-decoration:underline;height:40px;width:346px;z-index: 105; left: 319px; position: absolute;
+            top: 388px"></span>-->
+            <input name="btnSubmit" value="Submit" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;btnSubmit&quot;, &quot;&quot;, false, &quot;&quot;, &quot;DatewiseCommodityReport2.aspx&quot;, false, false))" id="btnSubmit" style="color:#FFFF80;background-color:#266606;border-color:#C0FFC0;font-weight:bold;width:107px;" type="submit"><input name="btnReset" value="Reset" id="btnReset" style="color:#FFFF80;background-color:#266606;border-color:#C0FFC0;font-weight:bold;height:24px;width:100px;" type="submit">
+        </td>
+     </tr>
+ </tbody></table>
+ </td></tr> 
+ </tbody></table> 
+        <input name="hidCommName" id="hidCommName" value="Potato" type="hidden">
+        <input name="hidCommCode" id="hidCommCode" value="24" type="hidden">
+        <input name="hidStateCode" id="hidStateCode" value="RJ" type="hidden">
+        <input name="hidStateName" id="hidStateName" value="Rajasthan" type="hidden">
+        <input name="hidYear" id="hidYear" value="2013" type="hidden">
+        <input name="hidMonthName" id="hidMonthName" value="June" type="hidden">
+        <input name="hidGroupCode" id="hidGroupCode" value="6" type="hidden">
+       </form>
+
+
+</body></html>
